@@ -1,0 +1,68 @@
+.app{
+
+    display: flex;
+    padding: 30px;
+}
+
+.game{
+    height: 560px;
+    width: 560px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    background: url("images/CandyCrashBG.png");
+    background-size:contain;
+    background-position:top;
+    background: cover;
+
+}
+
+.game img {
+
+    height : 70px;
+    width : 70px;
+
+}
+
+.score-board {
+    display: grid;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 1px 1px #000000;
+    position: fixed;
+
+
+    box-sizing: border-box; 
+    padding-top: 10px;
+    padding-left: 20px;
+    background-color: #3af773;
+
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+
+    bottom: 0;
+    left: 19%;
+    width: 6%;
+    height: 50px;
+
+}
+
+.score-board .label {
+    grid-column: 1 / 2;
+}
+
+.score-board .value {
+    grid-column: 2 / 3;
+}
+
+/* body{
+    background: url("images/CandyCrashBG.png"); 
+     background-size:contain;
+    background-position:top;
+    background: cover;
+}
+*/
+
